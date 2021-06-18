@@ -33,11 +33,16 @@
     input {
       @include element-invisible;
 
+      + label {
+        line-height: 0;
+      }
+
       &:focus + label {
         outline: $outline-focus;
       }
 
-      &:checked + label img {
+      &:checked + label img,
+      &:checked + label svg {
         opacity: 0.15;
       }
     }

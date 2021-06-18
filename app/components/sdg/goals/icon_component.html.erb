@@ -1,1 +1,5 @@
-<%= image_tag image_path, alt: image_text, class: "sdg-goal-icon" %>
+<% if svg_available? %>
+  <%= svg %>
+<% else %>
+  <%= png %>
+<% end %>

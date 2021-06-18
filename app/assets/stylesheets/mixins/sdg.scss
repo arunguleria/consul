@@ -21,6 +21,10 @@
     margin-top: $max-spacing;
   }
 
+  a {
+    display: block;
+  }
+
   a:hover .sdg-goal-icon {
     filter: brightness(90%);
   }
@@ -50,7 +54,8 @@
     a:focus {
       outline: none;
 
-      img {
+      img,
+      svg {
         outline: $outline-focus;
       }
     }
