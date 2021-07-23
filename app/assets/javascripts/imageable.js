@@ -119,7 +119,9 @@
       }
     },
     initializeRemoveCachedImageLinks: function() {
-      $("#nested-image").on("ajax:complete", "a.remove-cached-attachment", function() {
+      $("#nested-image").on("click", "a.remove-cached-attachment", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
         $("#new_image_link").removeClass("hide");
         $(this).closest(".direct-upload").remove();
       });
