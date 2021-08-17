@@ -5,6 +5,8 @@ en:
     actions:
       actions: Actions
       confirm: Are you sure?
+      confirm_action: "Are you sure? %{action} %{resource_name} '%{name}'"
+      confirm_delete: "Are you sure? This action will delete %{resource_name} '%{name}' and can't be undone."
       confirm_hide: Confirm moderation
       hide: Hide
       hide_author: Hide author
@@ -15,7 +17,6 @@ en:
       edit: Edit
       configure: Configure
       delete: Delete
-      confirm_delete: "Are you sure? This action will delete %{resource_name} '%{name}' and can't be undone."
     officing_booth:
       title: "You are officing the booth located at %{booth}. If this is not correct, do not continue and call the help phone number. Thank you."
     banners:
@@ -148,8 +149,6 @@ en:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
         recalculate: Recalculate Winner Investments
-      shared:
-        resource_name: "the budget"
     budget_groups:
       name: "Name"
       headings_name: "Headings"
@@ -787,6 +786,8 @@ en:
       form:
         edit_title: "Edit administrator"
         updated: "Administrator updated successfully"
+    models:
+      budget: "the budget"
     moderators:
       index:
         title: Moderators

@@ -5,6 +5,8 @@ es:
     actions:
       actions: Acciones
       confirm: '¿Estás seguro?'
+      confirm_action: "¿Estás seguro? %{action} %{resource_name} '%{name}'"
+      confirm_delete: "¿Estás seguro? Esta acción borrará %{resource_name} '%{name}' y no se puede deshacer."
       confirm_hide: Confirmar moderación
       hide: Ocultar
       hide_author: Bloquear al autor
@@ -14,7 +16,6 @@ es:
       unmark_featured: Quitar destacado
       edit: Editar
       configure: Configurar
-      confirm_delete: "¿Estás seguro? Esta acción borrará %{resource_name} '%{name}' y no se puede deshacer."
       delete: Borrar
     officing_booth:
       title: "Estás ahora mismo en la mesa ubicada en %{booth}. Si esto no es correcto no sigas adelante y llama al teléfono de incidencias. Gracias."
@@ -148,8 +149,6 @@ es:
         calculate: Calcular proyectos ganadores
         calculated: Calculando ganadores, puede tardar un minuto.
         recalculate: Recalcular proyectos ganadores
-      shared:
-        resource_name: "el presupuesto"
     budget_groups:
       name: "Nombre"
       headings_name: "Partidas"
@@ -773,6 +772,8 @@ es:
       comments: "Comentarios"
       local_census_records: Gestionar censo local
       machine_learning: "IA / Machine learning"
+    models:
+      budget: "el presupuesto"
     administrators:
       index:
         title: Administradores
